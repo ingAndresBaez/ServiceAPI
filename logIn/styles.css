@@ -2,23 +2,29 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: url('../recursos/imagenes/fondo.jpg') no-repeat center center fixed;
+    background-color: #f0f4c3; /* Fondo de color pastel */
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    color: #fff;
+    color: #333;
 }
 
 header {
+    width: 100%;
+    background-color: #aed581; /* Color pastel para el header */
+    padding: 20px 0;
     text-align: center;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 header h2 {
-    color: #fff;
+    margin: 0;
+    color: #333;
 }
 
 main {
@@ -30,10 +36,10 @@ main {
 }
 
 .login {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #ffffff; /* Fondo blanco */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 400px;
 }
@@ -50,7 +56,7 @@ section {
 label {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #ddd;
+    color: #666;
 }
 
 input[type="text"],
@@ -60,11 +66,11 @@ input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #f9f9f9;
 }
 
 input[type="submit"] {
-    background-color: #667eea;
+    background-color: #aed581; /* Color pastel */
     color: white;
     padding: 10px;
     border: none;
@@ -75,5 +81,20 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #5a67d8;
+    background-color: #8bc34a; /* Color pastel más oscuro */
+}
+
+.links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links a:hover {
+    text-decoration: underline;
 }

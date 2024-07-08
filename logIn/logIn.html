@@ -4,33 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js"></script>
+   
     <script src="logIn.js" type="module"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
     <header>
         <h2>Iniciar Sesión</h2>
     </header>
-    <div class="login">
-        <form id="loginForm">
-            <section>
-                <label for="nameUser">Usuario</label>
-                <input type="text" id="nameUser" name="nameUser" required>
-            </section>
-            
-            <section>
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password" required>
-            </section>
-           
-            
-            <input type="submit" value="Iniciar Sesión">
-        </form>
-    </div>
-    
+    <main>
+        <div class="login">
+            <form id="loginForm">
+                <section>
+                    <label for="nameUser">Usuario</label>
+                    <input type="text" id="nameUser" name="nameUser" required>
+                </section>
+                
+                <section>
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </section>
+                
+                <input type="submit" value="Iniciar Sesión">
+                <p class="links">
+                    <a href="register.html">Crear una cuenta</a> |
+                    <a href="forgot_password.html">¿Olvidaste tu contraseña?</a>
+                </p>
+            </form>
+        </div>
+    </main>
 </body>
 </html>

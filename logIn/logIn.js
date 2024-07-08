@@ -6,25 +6,27 @@ async function logIn(event) {
     const password = document.getElementById('password').value;
 alert(password);
     try {
-        // Enviar los datos al archivo PHP usando fetch API
-        const response = await fetch('logIn.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                'userName': userName,
-                'password': password
-            })
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'logIn.php', true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+    
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    const response = JSON.parse(xhr.responseText);
+                    alert('Solicitud exitosa: ' + response.message);
+                } else {
+                    alert('Error en la solicitud: ' + xhr.status);
+                }
+            }
+        };
+    
+        const data = JSON.stringify({
+            userName: userName,
+            password: password
         });
-
-        // Inspeccionar el código de estado de la respuesta
-        if (!response.ok) {
-            throw new Error('Error en la solicitud12: ' + response.status + ' ' + response.statusText);
-        }
-
-        const data = await response.json();
-        alert('Solicitud exitosa: ' + data.message);
+    
+        xhr.send(data);
     } catch (error) {
         console.error(error);
         alert('Error en la solicitud: ' + error.message);

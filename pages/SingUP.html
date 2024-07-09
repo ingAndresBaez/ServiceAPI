@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../Styles/SignUp.css"> <!-- Cambia esta ruta si usas un archivo CSS separado -->
+</head>
+<body>
+    <header>
+        <h2>Registrarse</h2>
+    </header>
+    
+    <main>
+        <div class="form-container">
+            <form id="signupForm">
+                <section>
+                    <label for="user">Nombre</label>
+                    <input type="text" id="user" name="user" placeholder="Tu nombre" required>
+                </section>
+                <section>
+                    <label for="userName1">Correo electrónico</label>
+                    <input type="email" id="userName1" name="userName1" placeholder="Tu correo electrónico" required>
+                </section>
+                <section>
+                    <label for="password1">Contraseña</label>
+                    <input type="password" id="password1" name="password1" placeholder="Tu contraseña" required>
+                </section>
+                <section>
+                    <label for="ve_password">Verifica tu contraseña</label>
+                    <input type="password" id="ve_password" name="ve_password" placeholder="Repite tu contraseña" required>
+                    <p id="passwordError" class="error"></p>
+                </section>
+                <section>
+                    <button type="submit">Registrarse</button>
+                </section>
+            </form>
+        </div>
+    </main>
+
+    <script src="../Scrips/signup.js"></script>
+</body>
+</html>

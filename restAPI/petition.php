@@ -23,8 +23,9 @@ switch ($method) {
     case 'POST':
         if ($route === '/login') {
             $userController->loginUser();
-            
-        } else {
+        }elseif($route==='/signup'){
+            $userController->postUser();
+        }else {
             echo json_encode(['message' => 'Insertar Datos']);
         }
         break;

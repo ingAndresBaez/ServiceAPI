@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0;
+}
+
+/* Estilos del contenedor del formulario */
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin-bottom: 15px;
+}
+
+/* Estilos de las etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilos de los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* Estilos del mensaje de error */
+.error {
+    margin-top: 5px;
+    font-size: 0.875em;
+    color: #d9534f;
+}
+
+button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    font-size: 1em; /* Tamaño de fuente */
+    font-weight: bold; /* Fuente en negrita */
+    text-align: center; /* Centra el texto dentro del botón */
+    display: block; /* Asegura que el botón ocupe el ancho completo del contenedor */
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 200px; /* Ancho máximo del botón */
+    margin: 0 auto; /* Centra el botón horizontalmente */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el color de fondo y la sombra */
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+button:hover {
+    background-color: #45a049; /* Color de fondo más oscuro */
+}
+
+/* Efecto al hacer clic en el botón */
+button:active {
+    background-color: #39843c; /* Color de fondo aún más oscuro */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra interna para el clic */
+}
